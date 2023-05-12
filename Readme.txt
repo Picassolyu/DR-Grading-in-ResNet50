@@ -1,0 +1,17 @@
+该目录下有以下文件：
+--------.idea				#IDE文件
+--------C. Diabetic Retinopathy Grading	#官方数据集
+--------data				#存放整理后的数据集，其中对应标签的图片放入了对应的文件夹
+	--------train			#训练用数据
+	--------valid			#从训练数据中抽取出一部分用于训练时的验证
+	--------test			#测试集
+--------ModelHistory			# 训练出的不同模型以及对应的测试集输出
+--------models				#存放当前Main.py的模型文件
+--------classify.py				#将官方数据集中的图片根据标签放入对应文件夹中
+--------data_accuracy_curve.png
+--------data_loss_curve.png			#准确率和损失函数变化图
+--------Main.py				#训练文件
+--------output.py				#测试输出
+--------test.py				#修改其中的model path可以使用指定模型文件得到对应预测结果
+--------transform.py			#旋转某文件夹下所有的图片生成新文件，用于解决标签稀疏
+--------Readme.txt			#本文件
